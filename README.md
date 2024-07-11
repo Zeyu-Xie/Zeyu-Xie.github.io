@@ -13,8 +13,6 @@ Some of the HTML and CSS code are from the template of [GoDaddy](https://www.god
 ```
 MIT License
 
-MIT License
-
 Copyright (c) 2024 Acan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
