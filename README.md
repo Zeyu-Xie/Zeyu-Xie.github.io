@@ -1,6 +1,6 @@
 # Zeyu-Xie.github.io
 
-Acan Xie's Personal Website
+A website — my self web page.
 
 ## Copyright
 
