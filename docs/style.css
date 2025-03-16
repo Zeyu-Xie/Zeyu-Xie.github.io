@@ -1,0 +1,27 @@
+* {
+  font-family: var(--sl-font-sans);
+}
+
+body {
+  width: auto;
+  min-width: min-content;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+code {
+  font-family: var(--sl-font-mono);
+}
+
+samp {
+  font-family: var(--sl-font-mono);
+}
+
+#contact-info table {
+  text-align: left;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 1rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */

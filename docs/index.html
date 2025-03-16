@@ -36,7 +36,11 @@
     <meta property="og:image:alt" content="Zeyu Xie's Personal Homepage" />
     <meta property="og:locale" content="en" />
 
-    <link rel="stylesheet" href="https://zeyu-xie.github.io/Myosotis-Web/Scholar_Lite/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
 
     <!-- Google Tag Manager -->
     <script>
@@ -124,493 +128,657 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <header>
-        <h1 style="display: none;">Zeyu Xie</h1>
-        <nav>
-            <a href="#">Zeyu Xie</a>
-        </nav>
+        <h1>Zeyu Xie</h1>
     </header>
 
-    <p>Master’s student in Data Science at Stockholm University, with a bachelor’s degree in Mathematics from Tsinghua
-        University. Seeking internships in data science, internet technology, and software development.</p>
-    <p><em>Stockholm University. Stockholm, Stockholm County, Sweden</em></p>
-    <hr />
-    <h2 id='contact-info'>Contact Info</h2>
-    <ul>
-        <li>📧 Email: <a href='mailto:xie.zeyu20@gmail.com'>xie.zeyu20@gmail.com</a></li>
-        <li>📞 Phone: <a href='tel:+460703181056'>+46 (0) 70-318 10 56</a></li>
-        <li>🌐 Website: <a href='https://zeyu-xie.github.io'>zeyu-xie.github.io</a></li>
-        <li>LinkedIn: <a href='https://www.linkedin.com/in/zeyu-xie'>Zeyu Xie</a></li>
-        <li>GitHub: <a href='https://github.com/Zeyu-Xie'>Zeyu-Xie</a></li>
-        <li>Facebook: <a href='https://www.facebook.com/profile.php?id=100074450301226'>Zeyu Xie</a></li>
-        <li>Instagram: <a href='https://www.instagram.com/acanxie/'>acanxie</a></li>
-        <li>WeChat: A_Genius_XZY</li>
-        <li>Address: <a href='https://maps.app.goo.gl/Y9rKbTeWLCVW9uPa6'>Forskarbacken 15, 114 15 Stockholm, Sweden</a>
-        </li>
+    <sl-tab-group placement="start">
+        <sl-tab slot="nav" panel="contact-info">Contact Info</sl-tab>
+        <sl-tab slot="nav" panel="about">About</sl-tab>
+        <sl-tab slot="nav" panel="education">Education</sl-tab>
+        <sl-tab slot="nav" panel="projects">Projects</sl-tab>
+        <sl-tab slot="nav" panel="skills">Skills</sl-tab>
+        <sl-tab slot="nav" panel="courses">Courses</sl-tab>
+        <sl-tab slot="nav" panel="honors-awards">Honors & Awards</sl-tab>
 
-    </ul>
-    <hr />
-    <h2 id='about'>About</h2>
-    <p>Hi! Thanks for visiting my page. Here’s a little about me:</p>
-    <p>======</p>
-    <p>-&gt; Right now, I’m…</p>
-    <p>🔍 Seeking internship opportunities in data science, software engineering, and web development.</p>
-    <p>📚 Pursuing a Master’s in Data Science, Statistics, and Decision Analysis at DSV, Stockholm University.</p>
-    <p>======</p>
-    <p>-&gt; I have good education background.</p>
-    <p>🎓 Graduated from Tsinghua University (2024) with a strong foundation in mathematics and programming.</p>
-    <p>🏅 Silver Medalist in the 35th Chinese Mathematical Olympiad (CMO).</p>
-    <p>🏅 First Prize in the 35th Chinese High School Mathematics League.</p>
-    <p>======</p>
-    <p>-&gt; I love to code in my spare time…</p>
-    <p>💻 Projects I’ve worked on:
-        • VloumeVibe: My iOS app.
-        • Handy tools like Athena-Scraper, Palette, and Textshoter.</p>
-    <p>💻 Skills I bring:
-        • Languages: C++, Python, JavaScript, Node.js, R.
-        • Tools: Docker, Conda, Xcode, and more.</p>
-    <p>======</p>
-    <p>-&gt; Personality</p>
-    <p>🎯 Focused and goal-driven.</p>
-    <p>🐶 Kind-hearted towards people and nature.</p>
-    <p>🤔 Curious and creative, always exploring new ideas.</p>
-    <p>======</p>
-    <p>Let’s connect—I’d love to share more about what I do and learn about you!</p>
-    <p><strong>Top Skills</strong>: Data Analysis, Mathematics, Web Development, Python (Programming Language), C++</p>
-    <hr />
-    <h2 id='education'>Education</h2>
-    <h3 id='stockholm-university'>Stockholm University</h3>
-    <ul>
-        <li><strong>Degree</strong>: Master&#39;s Degree</li>
-        <li><strong>Field of Study</strong>: Data Science, Statistics and Decision Analysis</li>
-        <li><strong>Time</strong>: 2024 - 2026</li>
-        <li><strong>Skills</strong>: Data Analysis, Python (Programming Language), Machine Learning, Mathematics, R,
-            LaTeX, Jupyter</li>
-
-    </ul>
-    <h3 id='kth-royal-institute-of-technology'>KTH Royal Institute of Technology</h3>
-    <ul>
-        <li><strong>Type</strong>: Exchange</li>
-        <li><strong>Time</strong>: 2022 - 2023</li>
-        <li><strong>Skills</strong>: Python (Programming Language), Mathematics</li>
-
-    </ul>
-    <h3 id='tsinghua-university'>Tsinghua University</h3>
-    <ul>
-        <li><strong>Degree</strong>: Bachelor&#39;s degree</li>
-        <li><strong>Field of Study</strong>: Mathematics</li>
-        <li><strong>Time</strong>: Sep 2020 - Jun 2024</li>
-        <li><strong>Skills</strong>: React.js, Python (Programming Language), Machine Learning, Mathematics, LaTeX,
-            MATLAB, C++</li>
-
-    </ul>
-    <hr />
-    <h2 id='projects'>Projects</h2>
-    <h3 id='hydrangea-athena-scraper'>Hydrangea Athena Scraper</h3>
-    <ul>
-        <li>
-            <p><strong>Time</strong>: Nov. 2024 - Present</p>
-        </li>
-        <li>
-            <p><strong>Description</strong>: A tool for downloading files from Athena.</p>
-        </li>
-        <li>
-            <p><strong>Skills</strong>: Python (Programming Language)</p>
-        </li>
-        <li>
-            <p><strong>Links</strong>:</p>
+        <sl-tab-panel name="contact-info" id="contact-info">
+            <h2>Contact Info</h2>
+            <sl-alert open>
+                <sl-icon slot="icon" name="info-circle"></sl-icon>
+                The following information is up-to-date as of <sl-format-date month="long" day="numeric" year="numeric" date="2025-03-16T23:29:00.000Z"></sl-format-date>
+              </sl-alert>              
+            <table>
+                <tr>
+                    <td>
+                        <sl-icon name="envelope"></sl-icon>
+                    </td>
+                    <td>
+                        <p>xie.zeyu20@gmail.com</p>
+                    </td>
+                    <td>
+                        <div>
+                            <sl-copy-button value="xie.zeyu20@gmail.com"></sl-copy-button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <sl-icon name="phone"></sl-icon>
+                    </td>
+                    <td>
+                        <p>+46 (0) 70-318 10 56</p>
+                    </td>
+                    <td>
+                        <div>
+                            <sl-copy-button value="+46 (0) 70-318 10 56"></sl-copy-button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <sl-icon name="globe"></sl-icon>
+                    </td>
+                    <td>
+                        <p>zeyu-xie.github.io</p>
+                    </td>
+                    <td>
+                        <div>
+                            <sl-copy-button value="https://zeyu-xie.github.io"></sl-copy-button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <sl-icon name="linkedin"></sl-icon>
+                    </td>
+                    <td>
+                        <p>Zeyu Xie</p>
+                    </td>
+                    <td>
+                        <div>
+                            <sl-copy-button value="https://www.linkedin.com/in/zeyu-xie"></sl-copy-button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <sl-icon name="github"></sl-icon>
+                    </td>
+                    <td>
+                        <p>Zeyu-Xie</p>
+                    </td>
+                    <td>
+                        <div>
+                            <sl-copy-button value="https://github.com/Zeyu-Xie"></sl-copy-button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <sl-icon name="facebook"></sl-icon>
+                    </td>
+                    <td>
+                        <p>Zeyu Xie</p>
+                    </td>
+                    <td>
+                        <div>
+                            <sl-copy-button value="https://www.facebook.com/profile.php?id=100074450301226"></sl-copy-button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <sl-icon name="instagram"></sl-icon>
+                    </td>
+                    <td>
+                        <p>acanxie</p>
+                    </td>
+                    <td>
+                        <div>
+                            <sl-copy-button value="https://www.instagram.com/acanxie/"></sl-copy-button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <sl-icon name="wechat"></sl-icon>
+                    </td>
+                    <td>
+                        <p>A_Genius_XZY</p>
+                    </td>
+                    <td>
+                        <div>
+                            <sl-copy-button value="A_Genius_XZY"></sl-copy-button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <sl-icon name="pin-map"></sl-icon>
+                    </td>
+                    <td>
+                        <p>Forskarbacken 15, 114 15 Stockholm, Sweden</p>
+                    </td>
+                    <td>
+                        <div>
+                            <sl-copy-button value="https://maps.app.goo.gl/Y9rKbTeWLCVW9uPa6"></sl-copy-button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </sl-tab-panel>
+        <sl-tab-panel name="about">
+            <sl-details summary="Zeyu Xie" open>
+                Master’s student in Data Science at Stockholm University, with a bachelor’s degree in Mathematics from
+                Tsinghua
+                University. Seeking internships in data science, internet technology, and software development.
+                <em>Stockholm University. Stockholm, Stockholm County, Sweden</em>
+            </sl-details>
+            <h2 id='about'>About</h2>
+            <p>Hi! Thanks for visiting my page. Here’s a little about me:</p>
+            <p>======</p>
+            <p>-&gt; Right now, I’m…</p>
+            <p>🔍 Seeking internship opportunities in data science, software engineering, and web development.</p>
+            <p>📚 Pursuing a Master’s in Data Science, Statistics, and Decision Analysis at DSV, Stockholm University.
+            </p>
+            <p>======</p>
+            <p>-&gt; I have good education background.</p>
+            <p>🎓 Graduated from Tsinghua University (2024) with a strong foundation in mathematics and programming.</p>
+            <p>🏅 Silver Medalist in the 35th Chinese Mathematical Olympiad (CMO).</p>
+            <p>🏅 First Prize in the 35th Chinese High School Mathematics League.</p>
+            <p>======</p>
+            <p>-&gt; I love to code in my spare time…</p>
+            <p>💻 Projects I’ve worked on:
+                • VloumeVibe: My iOS app.
+                • Handy tools like Athena-Scraper, Palette, and Textshoter.</p>
+            <p>💻 Skills I bring:
+                • Languages: C++, Python, JavaScript, Node.js, R.
+                • Tools: Docker, Conda, Xcode, and more.</p>
+            <p>======</p>
+            <p>-&gt; Personality</p>
+            <p>🎯 Focused and goal-driven.</p>
+            <p>🐶 Kind-hearted towards people and nature.</p>
+            <p>🤔 Curious and creative, always exploring new ideas.</p>
+            <p>======</p>
+            <p>Let’s connect—I’d love to share more about what I do and learn about you!</p>
+            <p><strong>Top Skills</strong>: Data Analysis, Mathematics, Web Development, Python (Programming Language),
+                C++</p>
+            <hr />
+        </sl-tab-panel>
+        <sl-tab-panel name="education">
+            <h2 id='education'>Education</h2>
+            <h3 id='stockholm-university'>Stockholm University</h3>
             <ul>
-                <li><a href='https://github.com/Zeyu-Xie/Hydrangea-Athena-Scraper'>GitHub -
-                        Zeyu-Xie/Hydrangea-Athena-Scraper</a></li>
+                <li><strong>Degree</strong>: Master&#39;s Degree</li>
+                <li><strong>Field of Study</strong>: Data Science, Statistics and Decision Analysis</li>
+                <li><strong>Time</strong>: 2024 - 2026</li>
+                <li><strong>Skills</strong>: Data Analysis, Python (Programming Language), Machine Learning,
+                    Mathematics, R,
+                    LaTeX, Jupyter</li>
 
             </ul>
-        </li>
-
-    </ul>
-    <h3 id='hydrangea-screen-monitor'>Hydrangea Screen Monitor</h3>
-    <ul>
-        <li>
-            <p><strong>Time</strong>: Oct. 2024 - Present</p>
-        </li>
-        <li>
-            <p><strong>Description</strong>: A homebrew package for safely monitoring remote terminals.</p>
-        </li>
-        <li>
-            <p><strong>Links</strong>:</p>
+            <h3 id='kth-royal-institute-of-technology'>KTH Royal Institute of Technology</h3>
             <ul>
-                <li><a href='https://github.com/Zeyu-Xie/Hydrangea-Screen-Monitor'>GitHub -
-                        Zeyu-Xie/Hydrangea-Screen-Monitor</a></li>
+                <li><strong>Type</strong>: Exchange</li>
+                <li><strong>Time</strong>: 2022 - 2023</li>
+                <li><strong>Skills</strong>: Python (Programming Language), Mathematics</li>
 
             </ul>
-        </li>
-
-    </ul>
-    <h3 id='volumevibe'>VolumeVibe</h3>
-    <ul>
-        <li>
-            <p><strong>Time</strong>: Mar. 2024 - Present</p>
-        </li>
-        <li>
-            <p><strong>Description</strong>: An iOS app for precise volume control, as well as quiet mode with just one
-                click. Adjust iPhone and iPad volume precisely.</p>
-        </li>
-        <li>
-            <p><strong>Skills</strong>: Swift (Programming Language)</p>
-        </li>
-        <li>
-            <p><strong>Links</strong>:</p>
+            <h3 id='tsinghua-university'>Tsinghua University</h3>
             <ul>
-                <li><a href='https://apps.apple.com/se/app/volumevibe/id6499272355?l=en-GB'>App Store - VolumeVibe</a>
+                <li><strong>Degree</strong>: Bachelor&#39;s degree</li>
+                <li><strong>Field of Study</strong>: Mathematics</li>
+                <li><strong>Time</strong>: Sep 2020 - Jun 2024</li>
+                <li><strong>Skills</strong>: React.js, Python (Programming Language), Machine Learning, Mathematics,
+                    LaTeX,
+                    MATLAB, C++</li>
+
+            </ul>
+        </sl-tab-panel>
+        <sl-tab-panel name="projects">
+            <h2 id='projects'>Projects</h2>
+            <h3 id='hydrangea-athena-scraper'>Hydrangea Athena Scraper</h3>
+            <ul>
+                <li>
+                    <p><strong>Time</strong>: Nov. 2024 - Present</p>
                 </li>
-                <li><a href='https://github.com/Zeyu-Xie/Hydrangea-VolumeVibe'>GitHub -
-                        Zeyu-Xie/Hydrangea-VolumeVibe</a></li>
+                <li>
+                    <p><strong>Description</strong>: A tool for downloading files from Athena.</p>
+                </li>
+                <li>
+                    <p><strong>Skills</strong>: Python (Programming Language)</p>
+                </li>
+                <li>
+                    <p><strong>Links</strong>:</p>
+                    <ul>
+                        <li><a href='https://github.com/Zeyu-Xie/Hydrangea-Athena-Scraper'>GitHub -
+                                Zeyu-Xie/Hydrangea-Athena-Scraper</a></li>
+
+                    </ul>
+                </li>
 
             </ul>
-        </li>
-
-    </ul>
-    <h3 id='backpropagation-in-chaotic-neural-networks'>Backpropagation in Chaotic Neural Networks</h3>
-    <ul>
-        <li><strong>Time</strong>: Feb. 2024 - Jun. 2024</li>
-        <li><strong>Description</strong>: Investigated the application of backpropagation in chaotic neural networks,
-            and analyzed stability using Lyapunov exponents.</li>
-        <li><strong>Skills</strong>: Python (Programming Language), Docker, LaTeX, Mathematics</li>
-
-    </ul>
-    <h3
-        id='a-human-computer-collaborative-tool-for-training-a-single-large-language-model-agent-into-a-network-through-few-examples'>
-        A Human-Computer Collaborative Tool for Training a Single Large Language Model Agent into a Network through Few
-        Examples</h3>
-    <ul>
-        <li><strong>Time</strong>: Mar. 2023 - Jan. 2024</li>
-        <li><strong>Description</strong>: The capabilities of a single large language model (LLM) agent for solving a
-            complex task are limited. Connecting multiple LLM agents to a network can effectively improve overall
-            performance. However, building an LLM agent network (LAN) requires a substantial amount of time and effort.
-            In this paper, we introduce EasyLAN, a human-computer collaborative tool that helps developers construct
-            LANs. EasyLAN initially generates a LAN containing only one agent based on the description of the desired
-            task. Subsequently, EasyLAN leverages a few training examples to update the LAN. For each example, EasyLAN
-            models the gap between the output and the ground truth and identifies the causes of the errors. These errors
-            are addressed through carefully designed strategies. Users can intervene in EasyLAN&#39;s workflow or
-            directly modify the LAN. Eventually, the LAN evolves from a single agent to a network of LLM agents. The
-            experimental results indicate that developers can rapidly construct LANs with good performance.</li>
-        <li><strong>Skills</strong>: React.js, Web Development</li>
-
-    </ul>
-    <h3 id='hydrangea-palette'>Hydrangea Palette</h3>
-    <ul>
-        <li>
-            <p><strong>Time</strong>: Jul. 2023</p>
-        </li>
-        <li>
-            <p><strong>Description</strong>: A website for displaying various colors for artists.</p>
-        </li>
-        <li>
-            <p><strong>Skills</strong>: React.js, Web Development</p>
-        </li>
-        <li>
-            <p><strong>Links</strong>:</p>
+            <h3 id='hydrangea-screen-monitor'>Hydrangea Screen Monitor</h3>
             <ul>
-                <li><a href='https://Zeyu-Xie.github.io/Hydrangea-Palette'>Web Page - Hydrangea Palette</a></li>
-                <li><a href='https://github.com/Zeyu-Xie/Hydrangea-Palette'>GitHub - Zeyu-Xie/Hydrangea-Palette</a></li>
+                <li>
+                    <p><strong>Time</strong>: Oct. 2024 - Present</p>
+                </li>
+                <li>
+                    <p><strong>Description</strong>: A homebrew package for safely monitoring remote terminals.</p>
+                </li>
+                <li>
+                    <p><strong>Links</strong>:</p>
+                    <ul>
+                        <li><a href='https://github.com/Zeyu-Xie/Hydrangea-Screen-Monitor'>GitHub -
+                                Zeyu-Xie/Hydrangea-Screen-Monitor</a></li>
+
+                    </ul>
+                </li>
 
             </ul>
-        </li>
+            <h3 id='volumevibe'>VolumeVibe</h3>
+            <ul>
+                <li>
+                    <p><strong>Time</strong>: Mar. 2024 - Present</p>
+                </li>
+                <li>
+                    <p><strong>Description</strong>: An iOS app for precise volume control, as well as quiet mode with
+                        just one
+                        click. Adjust iPhone and iPad volume precisely.</p>
+                </li>
+                <li>
+                    <p><strong>Skills</strong>: Swift (Programming Language)</p>
+                </li>
+                <li>
+                    <p><strong>Links</strong>:</p>
+                    <ul>
+                        <li><a href='https://apps.apple.com/se/app/volumevibe/id6499272355?l=en-GB'>App Store -
+                                VolumeVibe</a>
+                        </li>
+                        <li><a href='https://github.com/Zeyu-Xie/Hydrangea-VolumeVibe'>GitHub -
+                                Zeyu-Xie/Hydrangea-VolumeVibe</a></li>
 
-    </ul>
-    <hr />
-    <h2 id='skills'>Skills</h2>
-    <h3 id='data-analysis'>Data Analysis</h3>
-    <ul>
-        <li><strong>Education</strong>: Stockholm University</li>
-        <li><strong>Courses</strong>: Bayesian Learning, Business Analytics, Data Mining, Decision Analysis, Foundations
-            of Data Science, Machine Learning, Statistics and Data Analysis for Computer and Systems Sciences</li>
+                    </ul>
+                </li>
 
-    </ul>
-    <h3 id='mathematics'>Mathematics</h3>
-    <ul>
-        <li><strong>Education</strong>: Stockholm University, Tsinghua University</li>
-        <li><strong>Courses</strong>: Abstract Algebra, Advanced Linear Algebra, Algorithm Analysis and Design, Complex
-            Analysis, Computational Probability, Electrodynamics, Foundations of Data Science, Fundamentals of
-            Programming, Introduction of Scientific Computing with Matlab, Introduction to Modern Cryptography, Lab of
-            Physics, Machine Learning, Mathematical Analysis, Measures and Integrals, Numerical Analysis, Numerical
-            Methods for Partial Differential Equations, Ordinary Differential Equations, Partial Differential Equations,
-            Physics for Scientists and Engineers, Probability Theory, Reinforcement Learning, Statistical Theory and
-            Modeling, Statistics and Data Analysis for Computer and Systems Sciences</li>
+            </ul>
+            <h3 id='backpropagation-in-chaotic-neural-networks'>Backpropagation in Chaotic Neural Networks</h3>
+            <ul>
+                <li><strong>Time</strong>: Feb. 2024 - Jun. 2024</li>
+                <li><strong>Description</strong>: Investigated the application of backpropagation in chaotic neural
+                    networks,
+                    and analyzed stability using Lyapunov exponents.</li>
+                <li><strong>Skills</strong>: Python (Programming Language), Docker, LaTeX, Mathematics</li>
 
-    </ul>
-    <h3 id='web-development'>Web Development</h3>
-    <ul>
-        <li><strong>Projects</strong>: A Human-Computer Collaborative Tool for Training a Single Large Language Model
-            Agent into a Network through Few Examples, Hydrangea Palette</li>
+            </ul>
+            <h3
+                id='a-human-computer-collaborative-tool-for-training-a-single-large-language-model-agent-into-a-network-through-few-examples'>
+                A Human-Computer Collaborative Tool for Training a Single Large Language Model Agent into a Network
+                through Few
+                Examples</h3>
+            <ul>
+                <li><strong>Time</strong>: Mar. 2023 - Jan. 2024</li>
+                <li><strong>Description</strong>: The capabilities of a single large language model (LLM) agent for
+                    solving a
+                    complex task are limited. Connecting multiple LLM agents to a network can effectively improve
+                    overall
+                    performance. However, building an LLM agent network (LAN) requires a substantial amount of time and
+                    effort.
+                    In this paper, we introduce EasyLAN, a human-computer collaborative tool that helps developers
+                    construct
+                    LANs. EasyLAN initially generates a LAN containing only one agent based on the description of the
+                    desired
+                    task. Subsequently, EasyLAN leverages a few training examples to update the LAN. For each example,
+                    EasyLAN
+                    models the gap between the output and the ground truth and identifies the causes of the errors.
+                    These errors
+                    are addressed through carefully designed strategies. Users can intervene in EasyLAN&#39;s workflow
+                    or
+                    directly modify the LAN. Eventually, the LAN evolves from a single agent to a network of LLM agents.
+                    The
+                    experimental results indicate that developers can rapidly construct LANs with good performance.</li>
+                <li><strong>Skills</strong>: React.js, Web Development</li>
 
-    </ul>
-    <h3 id='docker'>Docker</h3>
-    <ul>
-        <li><strong>Projects</strong>: Backpropagation in Chaotic Neural Networks</li>
+            </ul>
+            <h3 id='hydrangea-palette'>Hydrangea Palette</h3>
+            <ul>
+                <li>
+                    <p><strong>Time</strong>: Jul. 2023</p>
+                </li>
+                <li>
+                    <p><strong>Description</strong>: A website for displaying various colors for artists.</p>
+                </li>
+                <li>
+                    <p><strong>Skills</strong>: React.js, Web Development</p>
+                </li>
+                <li>
+                    <p><strong>Links</strong>:</p>
+                    <ul>
+                        <li><a href='https://Zeyu-Xie.github.io/Hydrangea-Palette'>Web Page - Hydrangea Palette</a></li>
+                        <li><a href='https://github.com/Zeyu-Xie/Hydrangea-Palette'>GitHub -
+                                Zeyu-Xie/Hydrangea-Palette</a></li>
 
-    </ul>
-    <h3 id='python-programming-language'>Python (Programming Language)</h3>
-    <ul>
-        <li><strong>Education</strong>: Stockholm University</li>
-        <li><strong>Courses</strong>: Probability Theory, Lab of Physics</li>
+                    </ul>
+                </li>
 
-    </ul>
-    <h3 id='c++'>C++</h3>
-    <ul>
-        <li><strong>Education</strong>: Tsinghua University</li>
-        <li><strong>Courses</strong>: Fundamentals of Programming</li>
+            </ul>
+        </sl-tab-panel>
+        <sl-tab-panel name="skills">
+            <h2 id='skills'>Skills</h2>
+            <h3 id='data-analysis'>Data Analysis</h3>
+            <ul>
+                <li><strong>Education</strong>: Stockholm University</li>
+                <li><strong>Courses</strong>: Bayesian Learning, Business Analytics, Data Mining, Decision Analysis,
+                    Foundations
+                    of Data Science, Machine Learning, Statistics and Data Analysis for Computer and Systems Sciences
+                </li>
 
-    </ul>
-    <h3 id='matlab'>MATLAB</h3>
-    <ul>
-        <li><strong>Education</strong>: Tsinghua University</li>
-        <li><strong>Courses</strong>: Introduction of Scientific Computing with Matlab</li>
+            </ul>
+            <h3 id='mathematics'>Mathematics</h3>
+            <ul>
+                <li><strong>Education</strong>: Stockholm University, Tsinghua University</li>
+                <li><strong>Courses</strong>: Abstract Algebra, Advanced Linear Algebra, Algorithm Analysis and Design,
+                    Complex
+                    Analysis, Computational Probability, Electrodynamics, Foundations of Data Science, Fundamentals of
+                    Programming, Introduction of Scientific Computing with Matlab, Introduction to Modern Cryptography,
+                    Lab of
+                    Physics, Machine Learning, Mathematical Analysis, Measures and Integrals, Numerical Analysis,
+                    Numerical
+                    Methods for Partial Differential Equations, Ordinary Differential Equations, Partial Differential
+                    Equations,
+                    Physics for Scientists and Engineers, Probability Theory, Reinforcement Learning, Statistical Theory
+                    and
+                    Modeling, Statistics and Data Analysis for Computer and Systems Sciences</li>
 
-    </ul>
-    <h3 id='r'>R</h3>
-    <ul>
-        <li><strong>Education</strong>: Stockholm University</li>
-        <li><strong>Courses</strong>: Statistics and Data Analysis for Computer and Systems Sciences</li>
+            </ul>
+            <h3 id='web-development'>Web Development</h3>
+            <ul>
+                <li><strong>Projects</strong>: A Human-Computer Collaborative Tool for Training a Single Large Language
+                    Model
+                    Agent into a Network through Few Examples, Hydrangea Palette</li>
 
-    </ul>
-    <h3 id='latex'>LaTeX</h3>
-    <ul>
-        <li><strong>Education</strong>: Stockholm University</li>
-        <li><strong>Courses</strong>: Introduction to Modern Cryptography, Foundations of Data Science</li>
+            </ul>
+            <h3 id='docker'>Docker</h3>
+            <ul>
+                <li><strong>Projects</strong>: Backpropagation in Chaotic Neural Networks</li>
 
-    </ul>
-    <h3 id='swift-programming-language'>Swift (Programming Language)</h3>
-    <ul>
-        <li><strong>Projects</strong>: VolumeVibe</li>
+            </ul>
+            <h3 id='python-programming-language'>Python (Programming Language)</h3>
+            <ul>
+                <li><strong>Education</strong>: Stockholm University</li>
+                <li><strong>Courses</strong>: Probability Theory, Lab of Physics</li>
 
-    </ul>
-    <h3 id='javascript'>JavaScript</h3>
-    <h3 id='nodejs'>Node.js</h3>
-    <h3 id='reactjs'>React.js</h3>
-    <ul>
-        <li><strong>Education</strong>: Tsinghua University</li>
-        <li><strong>Projects</strong>: A Human-Computer Collaborative Tool for Training a Single Large Language Model
-            Agent into a Network through Few Examples, Hydrangea Palette</li>
+            </ul>
+            <h3 id='c++'>C++</h3>
+            <ul>
+                <li><strong>Education</strong>: Tsinghua University</li>
+                <li><strong>Courses</strong>: Fundamentals of Programming</li>
 
-    </ul>
-    <h3 id='jupyter'>Jupyter</h3>
-    <ul>
-        <li><strong>Education</strong>: Stockholm University</li>
-        <li><strong>Courses</strong>: Foundations of Data Science</li>
+            </ul>
+            <h3 id='matlab'>MATLAB</h3>
+            <ul>
+                <li><strong>Education</strong>: Tsinghua University</li>
+                <li><strong>Courses</strong>: Introduction of Scientific Computing with Matlab</li>
 
-    </ul>
-    <hr />
-    <h2 id='courses'>Courses</h2>
-    <figure class='table-figure' style="margin: auto;">
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Code</th>
-                    <th>Associated with</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Abstract Algebra</td>
-                    <td>30420384</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Advanced Linear Algebra</td>
-                    <td>20420134</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Algorithm Analysis and Design</td>
-                    <td>70420334</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>An Introduction to the History and Philosophy of Science</td>
-                    <td>10691492</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Bayesian Learning</td>
-                    <td>ST5301</td>
-                    <td>Stockholm University</td>
-                </tr>
-                <tr>
-                    <td>Business Analytics</td>
-                    <td>ML436N</td>
-                    <td>Stockholm University</td>
-                </tr>
-                <tr>
-                    <td>Complex Analysis</td>
-                    <td>30420464</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Computational Probability</td>
-                    <td>84760333</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Data Mining</td>
-                    <td>ML752N</td>
-                    <td>Stockholm University</td>
-                </tr>
-                <tr>
-                    <td>Decision Analysis</td>
-                    <td>ML761N</td>
-                    <td>Stockholm University</td>
-                </tr>
-                <tr>
-                    <td>Electrodynamics</td>
-                    <td>20430054</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>English for Academic Purposes</td>
-                    <td>14201112</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Foundations of Data Science</td>
-                    <td>ML750N</td>
-                    <td>Stockholm University</td>
-                </tr>
-                <tr>
-                    <td>Fundamentals of Law</td>
-                    <td>10660012</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Fundamentals of Programming</td>
-                    <td>30240233</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Internet Innovation and Entrepreneurship</td>
-                    <td>00240261</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Introduction of Scientific Computing with Matlab</td>
-                    <td>30410012</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Introduction to Modern Cryptography</td>
-                    <td>44760292</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Lab of Physics</td>
-                    <td>10430782</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Literature Searching and Utilization (Sci-Tech)</td>
-                    <td>20750021</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Machine Learning</td>
-                    <td>ML272N</td>
-                    <td>Stockholm University</td>
-                </tr>
-                <tr>
-                    <td>Mathematical Analysis</td>
-                    <td>30420424</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Measures and Integrals</td>
-                    <td>30420334</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Numerical Analysis</td>
-                    <td>40420054</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Numerical Methods for Partial Differential Equations</td>
-                    <td>60420084</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Ordinary Differential Equations</td>
-                    <td>30420484</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Partial Differential Equations</td>
-                    <td>40420664</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Physics for Scientists and Engineers</td>
-                    <td>10430494</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Probability Theory</td>
-                    <td>40420624</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Reinforcement Learning</td>
-                    <td>MT7051</td>
-                    <td>Stockholm University</td>
-                </tr>
-                <tr>
-                    <td>Risk Analysis</td>
-                    <td>&nbsp;</td>
-                    <td>Stockholm University</td>
-                </tr>
-                <tr>
-                    <td>Statistical Theory and Modeling</td>
-                    <td>ST2601</td>
-                    <td>Stockholm University</td>
-                </tr>
-                <tr>
-                    <td>Statistics and Data Analysis for Computer and Systems Sciences</td>
-                    <td>ST1601</td>
-                    <td>Stockholm University</td>
-                </tr>
-                <tr>
-                    <td>Studies on Greek Philosophical Classics</td>
-                    <td>00692293</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>User-Centered Interaction Design</td>
-                    <td>10160022</td>
-                    <td>Tsinghua University</td>
-                </tr>
-                <tr>
-                    <td>Writing and Communication</td>
-                    <td>10691342</td>
-                    <td>Tsinghua University</td>
-                </tr>
-            </tbody>
-        </table>
-    </figure>
-    <hr />
-    <h2 id='honors--awards'>Honors &amp; Awards</h2>
-    <h3 id='silver-medalist-in-the-35th-chinese-mathematical-olympiad-cmo'>Silver Medalist in the 35th Chinese
-        Mathematical Olympiad (CMO)</h3>
-    <ul>
-        <li><strong>Issued by</strong>: Chinese Mathematical Society</li>
-        <li><strong>Time</strong>: Nov. 2019</li>
-        <li><strong>Description</strong>: The Chinese Mathematical Olympiad is an annual invitational mathematical
-            competition for high school students in China organized by the Chinese Mathematical Society.</li>
+            </ul>
+            <h3 id='r'>R</h3>
+            <ul>
+                <li><strong>Education</strong>: Stockholm University</li>
+                <li><strong>Courses</strong>: Statistics and Data Analysis for Computer and Systems Sciences</li>
 
-    </ul>
-    <h3 id='tsinghua-university-math-talents-program-scholarship'>Tsinghua University Math Talents Program Scholarship
-    </h3>
-    <ul>
-        <li><strong>Issued by</strong>: Tsinghua University</li>
-        <li><strong>Time</strong>: 2021</li>
+            </ul>
+            <h3 id='latex'>LaTeX</h3>
+            <ul>
+                <li><strong>Education</strong>: Stockholm University</li>
+                <li><strong>Courses</strong>: Introduction to Modern Cryptography, Foundations of Data Science</li>
 
-    </ul>
+            </ul>
+            <h3 id='swift-programming-language'>Swift (Programming Language)</h3>
+            <ul>
+                <li><strong>Projects</strong>: VolumeVibe</li>
+
+            </ul>
+            <h3 id='javascript'>JavaScript</h3>
+            <h3 id='nodejs'>Node.js</h3>
+            <h3 id='reactjs'>React.js</h3>
+            <ul>
+                <li><strong>Education</strong>: Tsinghua University</li>
+                <li><strong>Projects</strong>: A Human-Computer Collaborative Tool for Training a Single Large Language
+                    Model
+                    Agent into a Network through Few Examples, Hydrangea Palette</li>
+
+            </ul>
+            <h3 id='jupyter'>Jupyter</h3>
+            <ul>
+                <li><strong>Education</strong>: Stockholm University</li>
+                <li><strong>Courses</strong>: Foundations of Data Science</li>
+
+            </ul>
+        </sl-tab-panel>
+        <sl-tab-panel name="courses">
+            <h2 id='courses'>Courses</h2>
+            <figure class='table-figure' style="margin: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Code</th>
+                            <th>Associated with</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Abstract Algebra</td>
+                            <td>30420384</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Linear Algebra</td>
+                            <td>20420134</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Algorithm Analysis and Design</td>
+                            <td>70420334</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>An Introduction to the History and Philosophy of Science</td>
+                            <td>10691492</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Bayesian Learning</td>
+                            <td>ST5301</td>
+                            <td>Stockholm University</td>
+                        </tr>
+                        <tr>
+                            <td>Business Analytics</td>
+                            <td>ML436N</td>
+                            <td>Stockholm University</td>
+                        </tr>
+                        <tr>
+                            <td>Complex Analysis</td>
+                            <td>30420464</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Computational Probability</td>
+                            <td>84760333</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Data Mining</td>
+                            <td>ML752N</td>
+                            <td>Stockholm University</td>
+                        </tr>
+                        <tr>
+                            <td>Decision Analysis</td>
+                            <td>ML761N</td>
+                            <td>Stockholm University</td>
+                        </tr>
+                        <tr>
+                            <td>Electrodynamics</td>
+                            <td>20430054</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>English for Academic Purposes</td>
+                            <td>14201112</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Foundations of Data Science</td>
+                            <td>ML750N</td>
+                            <td>Stockholm University</td>
+                        </tr>
+                        <tr>
+                            <td>Fundamentals of Law</td>
+                            <td>10660012</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Fundamentals of Programming</td>
+                            <td>30240233</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Internet Innovation and Entrepreneurship</td>
+                            <td>00240261</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Introduction of Scientific Computing with Matlab</td>
+                            <td>30410012</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Introduction to Modern Cryptography</td>
+                            <td>44760292</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Lab of Physics</td>
+                            <td>10430782</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Literature Searching and Utilization (Sci-Tech)</td>
+                            <td>20750021</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Machine Learning</td>
+                            <td>ML272N</td>
+                            <td>Stockholm University</td>
+                        </tr>
+                        <tr>
+                            <td>Mathematical Analysis</td>
+                            <td>30420424</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Measures and Integrals</td>
+                            <td>30420334</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Numerical Analysis</td>
+                            <td>40420054</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Numerical Methods for Partial Differential Equations</td>
+                            <td>60420084</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Ordinary Differential Equations</td>
+                            <td>30420484</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Partial Differential Equations</td>
+                            <td>40420664</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Physics for Scientists and Engineers</td>
+                            <td>10430494</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Probability Theory</td>
+                            <td>40420624</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Reinforcement Learning</td>
+                            <td>MT7051</td>
+                            <td>Stockholm University</td>
+                        </tr>
+                        <tr>
+                            <td>Risk Analysis</td>
+                            <td>&nbsp;</td>
+                            <td>Stockholm University</td>
+                        </tr>
+                        <tr>
+                            <td>Statistical Theory and Modeling</td>
+                            <td>ST2601</td>
+                            <td>Stockholm University</td>
+                        </tr>
+                        <tr>
+                            <td>Statistics and Data Analysis for Computer and Systems Sciences</td>
+                            <td>ST1601</td>
+                            <td>Stockholm University</td>
+                        </tr>
+                        <tr>
+                            <td>Studies on Greek Philosophical Classics</td>
+                            <td>00692293</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>User-Centered Interaction Design</td>
+                            <td>10160022</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                        <tr>
+                            <td>Writing and Communication</td>
+                            <td>10691342</td>
+                            <td>Tsinghua University</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </figure>
+        </sl-tab-panel>
+        <sl-tab-panel name="honors-awards">
+            <h2 id='honors--awards'>Honors &amp; Awards</h2>
+            <h3 id='silver-medalist-in-the-35th-chinese-mathematical-olympiad-cmo'>Silver Medalist in the 35th Chinese
+                Mathematical Olympiad (CMO)</h3>
+            <ul>
+                <li><strong>Issued by</strong>: Chinese Mathematical Society</li>
+                <li><strong>Time</strong>: Nov. 2019</li>
+                <li><strong>Description</strong>: The Chinese Mathematical Olympiad is an annual invitational
+                    mathematical
+                    competition for high school students in China organized by the Chinese Mathematical Society.</li>
+
+            </ul>
+            <h3 id='tsinghua-university-math-talents-program-scholarship'>Tsinghua University Math Talents Program
+                Scholarship
+            </h3>
+            <ul>
+                <li><strong>Issued by</strong>: Tsinghua University</li>
+                <li><strong>Time</strong>: 2021</li>
+
+            </ul>
+
+        </sl-tab-panel>
+    </sl-tab-group>
+
+
+
+
+
+
 
     <footer>
         <p>
