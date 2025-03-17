@@ -3,10 +3,11 @@
 }
 
 body {
-  width: auto;
-  min-width: min-content;
+  width: 100%;
   max-width: 992px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 code {
@@ -17,11 +18,19 @@ samp {
   font-family: var(--sl-font-mono);
 }
 
-#contact-info table {
+ul {
+  list-style-type: none;
+}
+
+table {
   text-align: left;
   margin: 0 auto;
   border-collapse: separate;
   border-spacing: 1rem 0;
+}
+
+#courses-table tr > td:nth-of-type(2) {
+  font-family: var(--sl-font-mono);
 }
 
 /*# sourceMappingURL=style.css.map */
