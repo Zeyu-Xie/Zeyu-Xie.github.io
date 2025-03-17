@@ -42,10 +42,6 @@ table {
   font-family: var(--sl-font-mono);
 }
 
-.projects-table {
-  margin: 0 -1rem;
-}
-
 .card-header {
   width: 300px;
 }
