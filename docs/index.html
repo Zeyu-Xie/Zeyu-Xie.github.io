@@ -57,6 +57,7 @@
     </script>
     <!-- End Google Tag Manager -->
 
+    <!-- LaTeX Supporting -->
     <script>
         (function () {
             'use strict'; function aa(a) { var b = 0; return function () { return b < a.length ? { done: !1, value: a[b++] } : { done: !0 } } } var ba = "function" == typeof Object.defineProperties ? Object.defineProperty : function (a, b, c) { if (a == Array.prototype || a == Object.prototype) return a; a[b] = c.value; return a };
@@ -117,6 +118,8 @@
 
         window.__h82AlnkH6D91__("WyJwdWItMjkyMTY5NDk4Mjg2NDIwNCIsW251bGwsbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9iL3B1Yi0yOTIxNjk0OTgyODY0MjA0Il0sbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9lbC9BR1NLV3hVczR3YTA3dWZOeE13UVA0dENsQnJRbWo1M1E2QUcwVEFLeTlkVGh6X1FyQ0hKaXBOcmluUE00S0tscEh4UTlGbnpRLUhBSk5aTHlOSld6d0RER1FhQ1VBXHUwMDNkXHUwMDNkP3RlXHUwMDNkVE9LRU5fRVhQT1NFRCIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFczRGllaFhub0NmS25KT1IzbTJvanY3ZFFuVjlrM0NsejlIYlZ5blNPUVZuX0ZBeHA4bkZibHFOQVRjbVVzSlBiTlFfeklNaGtjOUJ2NUZMT3M3SVE5WVFcdTAwM2RcdTAwM2Q/YWJcdTAwM2QxXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFUwVkt6M1RhTGpaQmNqakoyMElvZjlCTTJsUFFxa0xGOXZ6TkdVT2FiMUNXY0JyVXJfc08zaW9mbUtEX25NRWJSV1h2TUNLRC1uLVdpWGJWYS1La050VndcdTAwM2RcdTAwM2Q/YWJcdTAwM2QyXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFhXZnR3UUd0dkVHbHd5Z0MxaGRCdjlvbVBHRVBYSWFzODN5UEpjbkxuSVh5STQ1NGdFVm9sVEV6b3hrbXI4aUlJSjRBa3lPQ1VZNjJaOVgxeHI5aWJrM1FcdTAwM2RcdTAwM2Q/c2JmXHUwMDNkMiIsImRpdi1ncHQtYWQiLDIwLDEwMCwiY0hWaUxUSTVNakUyT1RRNU9ESTROalF5TURRXHUwMDNkIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vd3d3LmdzdGF0aWMuY29tLzBlbW4vZi9wL3B1Yi0yOTIxNjk0OTgyODY0MjA0LmpzP3VzcXBcdTAwM2RDQUUiXSwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vZWwvQUdTS1d4VWx2S21QQU1MVkJHbWk2b0J4dEQ5Zi1icERUbnljVjYxbDZHaUxnRG1TX3hPZnJVVkZoM1loU0RyYThnczY3X3dENk1tTVpNYmFfbDZfUkc2TnA5cVFwd1x1MDAzZFx1MDAzZCJd");
     </script>
+    <!-- End LaTeX Supporting -->
+
 </head>
 
 <body>
@@ -146,10 +149,11 @@
             <h2>Contact Info</h2>
             <sl-alert open>
                 <sl-icon slot="icon" name="info-circle"></sl-icon>
-                The following information is up-to-date as of <sl-format-date month="long" day="numeric" year="numeric"
-                    date="2025-03-16T23:29:00.000Z"></sl-format-date>
+                The following information is up-to-date as of
+                <sl-format-date month="long" day="numeric" year="numeric"
+                    date="2025-03-16T00:00:00.000Z"></sl-format-date>
             </sl-alert>
-            <table>
+            <table id="contact-table">
                 <tr>
                     <td>
                         <sl-icon name="envelope"></sl-icon>
@@ -280,31 +284,26 @@
             </sl-alert>
 
             <p>Hi! Thanks for visiting my page. Here’s a little about me:</p>
-            <sl-divider></sl-divider>
-            <p><sl-icon name="arrow-right-square"></sl-icon>&nbsp; Right now, I’m…</p>
+            <h3>Right now, I'm ...</h3>
             <p>🔍&nbsp; Seeking internship opportunities in data science, software engineering, and web development.</p>
             <p>📚&nbsp; Pursuing a Master’s in Data Science, Statistics, and Decision Analysis at DSV, Stockholm
                 University.
             </p>
-            <sl-divider></sl-divider>
-            <p><sl-icon name="arrow-right-square"></sl-icon>&nbsp; I have good education background.</p>
+            <h3>I have good education background</h3>
             <p>🎓&nbsp; Graduated from Tsinghua University (2024) with a strong foundation in mathematics and
                 programming.</p>
             <p>🏅&nbsp; Silver Medalist in the 35th Chinese Mathematical Olympiad (CMO).</p>
             <p>🏅&nbsp; First Prize in the 35th Chinese High School Mathematics League.</p>
-            <sl-divider></sl-divider>
-            <p><sl-icon name="arrow-right-square"></sl-icon>&nbsp; I love to code in my spare time…</p>
+            <h3>I love to code in my spare time...</h3>
             <p>💻&nbsp; Projects I’ve worked on: VloumeVibe—My iOS app, Handy tools like Athena-Scraper, Palette, and
                 Textshoter.</p>
             <p>💻&nbsp; Skills I bring: Languages: C++, Python, JavaScript, Node.js, R; Tools: Docker, Conda, Xcode, and
                 more.</p>
-            <sl-divider></sl-divider>
-            <p><sl-icon name="arrow-right-square"></sl-icon>&nbsp; Personality</p>
+            <h3>Personality</h3>
             <p>🎯&nbsp; Focused and goal-driven.</p>
             <p>🐶&nbsp; Kind-hearted towards people and nature.</p>
             <p>🤔&nbsp; Curious and creative, always exploring new ideas.</p>
-            <sl-divider></sl-divider>
-            <p>Let’s connect—I’d love to share more about what I do and learn about you!</p>
+            <h3>Let’s connect—I’d love to share more about what I do and learn about you!</h3>
             <p><strong>Top Skills</strong>: Data Analysis, Mathematics, Web Development, Python (Programming Language),
                 C++</p>
         </sl-tab-panel>
@@ -312,7 +311,7 @@
             <h2>Education</h2>
             <sl-divider></sl-divider>
             <sl-badge variant="warning" pill>In Progress</sl-badge>
-            <h3 id='stockholm-university'>Stockholm University</h3>
+            <h3>Stockholm University</h3>
             <table>
                 <tr>
                     <td>
@@ -351,7 +350,7 @@
             </table>
             <sl-divider></sl-divider>
             <sl-badge variant="success" pill>Finished</sl-badge>
-            <h3 id='kth-royal-institute-of-technology'>KTH Royal Institute of Technology</h3>
+            <h3>KTH Royal Institute of Technology</h3>
             <table>
                 <tr>
                     <td>
@@ -387,7 +386,7 @@
                     </td>
                 </tr>
             </table>
-            <h3 id='tsinghua-university'>Tsinghua University</h3>
+            <h3>Tsinghua University</h3>
             <table>
                 <tr>
                     <td>
@@ -427,7 +426,7 @@
         <sl-tab-panel name="projects" id="projects">
             <h2>Projects</h2>
             <div id="projects-masonry">
-                <sl-card class="card-header project-card">
+                <sl-card class="card-header">
                     <div slot="header">
                         <strong>Hydrangea Athena Scraper</strong>
                         <sl-icon-button name="gear" label="Settings"></sl-icon-button>
@@ -461,7 +460,7 @@
                             href="https://github.com/Zeyu-Xie/Hydrangea-Athena-Scraper">Github</sl-button>
                     </div>
                 </sl-card>
-                <sl-card class="card-header project-card">
+                <sl-card class="card-header">
                     <div slot="header">
                         <strong>Hydrangea Screen Monitor</strong>
                         <sl-icon-button name="gear" label="Settings"></sl-icon-button>
@@ -495,7 +494,7 @@
                             href="https://github.com/Zeyu-Xie/Hydrangea-Screen-Monitor">Github</sl-button>
                     </div>
                 </sl-card>
-                <sl-card class="card-header project-card">
+                <sl-card class="card-header">
                     <div slot="header">
                         <strong>VolumeVibe</strong>
                         <sl-icon-button name="gear" label="Settings"></sl-icon-button>
@@ -532,7 +531,7 @@
                             href="https://github.com/Zeyu-Xie/Hydrangea-VolumeVibe">Github</sl-button>
                     </div>
                 </sl-card>
-                <sl-card class="card-header project-card">
+                <sl-card class="card-header">
                     <div slot="header">
                         <strong>Backpropagation in Chaotic Neural Networks</strong>
                         <sl-icon-button name="gear" label="Settings"></sl-icon-button>
@@ -565,7 +564,7 @@
                         </tr>
                     </table>
                 </sl-card>
-                <sl-card class="card-header project-card">
+                <sl-card class="card-header">
                     <div slot="header">
                         <strong>A Human-Computer Collaborative Tool for Training a Single Large Language Model Agent
                             into a
@@ -616,7 +615,7 @@
                         </tr>
                     </table>
                 </sl-card>
-                <sl-card class="card-header project-card">
+                <sl-card class="card-header">
                     <div slot="header">
                         <strong>Hydrangea Palette</strong>
                         <sl-icon-button name="gear" label="Settings"></sl-icon-button>

@@ -35,9 +35,13 @@ ul {
 
 table {
   text-align: left;
-  margin: 0 auto;
+  margin: 0;
   border-collapse: separate;
   border-spacing: 1rem 0;
+}
+
+#contact-table {
+  margin: 0 auto;
 }
 
 #courses-table {
@@ -54,18 +58,15 @@ table {
 
 .card-header {
   width: 300px;
-}
-
-.card-header [slot="header"] {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card-header h3 {
-  margin: 0;
-}
-
-.card-header sl-icon-button {
-  font-size: var(--sl-font-size-medium);
+  h3 {
+    margin: 0;
+  }
+  sl-icon-button {
+    font-size: var(--sl-font-size-medium);
+  }
+  [slot="header"] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

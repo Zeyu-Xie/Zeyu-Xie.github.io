@@ -21,6 +21,7 @@ window.addEventListener('resize', () => {
     adjust_main_menu_placement();
 });
 
+// Use bricks.js to create a masonry layout
 const instance = bricks({
     container: '#projects-masonry',
     packed: 'data-packed',
@@ -30,7 +31,9 @@ const instance = bricks({
         { mq: '1200px', columns: 3, gutter: 12 }
     ]
 });
-instance.pack();
+setInterval(() => {
+    a = instance.pack();
+}, 100);
 instance
     .update()
     .resize(true);
