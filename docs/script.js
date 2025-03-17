@@ -20,3 +20,17 @@ adjust_main_menu_placement();
 window.addEventListener('resize', () => {
     adjust_main_menu_placement();
 });
+
+const instance = bricks({
+    container: '#projects-masonry',
+    packed: 'data-packed',
+    sizes: [
+        { columns: 1, gutter: 12 },
+        { mq: '824px', columns: 2, gutter: 12 },
+        { mq: '1200px', columns: 3, gutter: 12 }
+    ]
+});
+instance.pack();
+instance
+    .update()
+    .resize(true);

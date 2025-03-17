@@ -40,7 +40,7 @@
     <script type="module"
         src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
     <script src="./src/jquery-3.7.1.min.js"></script>
-    <script src="./src/knot.js"></script>
+    <script src="./src/bricks.js"></script>
 
     <link rel="stylesheet" href="./style.css">
 
@@ -652,21 +652,6 @@
                     </div>
                 </sl-card>
             </div>
-            <script type="module">
-
-                const instance = bricks({
-                    container: '#projects-masonry',
-                    packed: 'data-packed',
-                    sizes: [
-                        { columns: 1, gutter: 12 },
-                        { mq: '824px', columns: 2, gutter: 12 },
-                        { mq: '1200px', columns: 3, gutter: 12 }
-                    ]
-                });
-                instance
-                    .pack()
-                    .resize(true);
-            </script>
         </sl-tab-panel>
         <sl-tab-panel name="skills" id="skills">
             <h2>Skills</h2>
