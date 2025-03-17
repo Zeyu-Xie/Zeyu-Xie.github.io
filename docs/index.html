@@ -39,6 +39,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <script type="module"
         src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <script src="./src/jquery-3.7.1.min.js"></script>
+    <script src="./src/masonry.pkgd.min.js"></script>
 
     <link rel="stylesheet" href="./style.css">
 
@@ -275,23 +277,27 @@
                 Master’s student in Data Science at Stockholm University, with a bachelor’s degree in Mathematics from
                 Tsinghua
                 University. Seeking internships in data science, internet technology, and software development.
-              </sl-alert>
-              
+            </sl-alert>
+
             <p>Hi! Thanks for visiting my page. Here’s a little about me:</p>
             <sl-divider></sl-divider>
             <p><sl-icon name="arrow-right-square"></sl-icon>&nbsp; Right now, I’m…</p>
             <p>🔍&nbsp; Seeking internship opportunities in data science, software engineering, and web development.</p>
-            <p>📚&nbsp; Pursuing a Master’s in Data Science, Statistics, and Decision Analysis at DSV, Stockholm University.
+            <p>📚&nbsp; Pursuing a Master’s in Data Science, Statistics, and Decision Analysis at DSV, Stockholm
+                University.
             </p>
             <sl-divider></sl-divider>
             <p><sl-icon name="arrow-right-square"></sl-icon>&nbsp; I have good education background.</p>
-            <p>🎓&nbsp; Graduated from Tsinghua University (2024) with a strong foundation in mathematics and programming.</p>
+            <p>🎓&nbsp; Graduated from Tsinghua University (2024) with a strong foundation in mathematics and
+                programming.</p>
             <p>🏅&nbsp; Silver Medalist in the 35th Chinese Mathematical Olympiad (CMO).</p>
             <p>🏅&nbsp; First Prize in the 35th Chinese High School Mathematics League.</p>
             <sl-divider></sl-divider>
             <p><sl-icon name="arrow-right-square"></sl-icon>&nbsp; I love to code in my spare time…</p>
-            <p>💻&nbsp; Projects I’ve worked on: VloumeVibe—My iOS app, Handy tools like Athena-Scraper, Palette, and Textshoter.</p>
-            <p>💻&nbsp; Skills I bring: Languages: C++, Python, JavaScript, Node.js, R; Tools: Docker, Conda, Xcode, and more.</p>
+            <p>💻&nbsp; Projects I’ve worked on: VloumeVibe—My iOS app, Handy tools like Athena-Scraper, Palette, and
+                Textshoter.</p>
+            <p>💻&nbsp; Skills I bring: Languages: C++, Python, JavaScript, Node.js, R; Tools: Docker, Conda, Xcode, and
+                more.</p>
             <sl-divider></sl-divider>
             <p><sl-icon name="arrow-right-square"></sl-icon>&nbsp; Personality</p>
             <p>🎯&nbsp; Focused and goal-driven.</p>
@@ -305,7 +311,7 @@
         <sl-tab-panel name="education" id="education">
             <h2>Education</h2>
             <sl-divider></sl-divider>
-            <sl-badge variant="warning" pill>In Process</sl-badge>
+            <sl-badge variant="warning" pill>In Progress</sl-badge>
             <h3 id='stockholm-university'>Stockholm University</h3>
             <table>
                 <tr>
@@ -337,7 +343,8 @@
                         <sl-icon name="tools"></sl-icon>
                     </td>
                     <td>
-                        <p>Data Analysis, Python (Programming Language), Machine Learning, Mathematics, R, LaTeX, Jupyter
+                        <p>Data Analysis, Python (Programming Language), Machine Learning, Mathematics, R, LaTeX,
+                            Jupyter
                         </p>
                     </td>
                 </tr>
@@ -375,7 +382,8 @@
                         <sl-icon name="tools"></sl-icon>
                     </td>
                     <td>
-                        <p>React.js, Python (Programming Language), Machine Learning, Mathematics, LaTeX, MATLAB, C++</p>
+                        <p>React.js, Python (Programming Language), Machine Learning, Mathematics, LaTeX, MATLAB, C++
+                        </p>
                     </td>
                 </tr>
             </table>
@@ -410,138 +418,245 @@
                         <sl-icon name="tools"></sl-icon>
                     </td>
                     <td>
-                        <p>React.js, Python (Programming Language), Machine Learning, Mathematics, LaTeX, MATLAB, C++</p>
+                        <p>React.js, Python (Programming Language), Machine Learning, Mathematics, LaTeX, MATLAB, C++
+                        </p>
                     </td>
                 </tr>
             </table>
         </sl-tab-panel>
         <sl-tab-panel name="projects" id="projects">
             <h2>Projects</h2>
-            <h3 id='hydrangea-athena-scraper'>Hydrangea Athena Scraper</h3>
-            <ul>
-                <li>
-                    <p><strong>Time</strong>: Nov. 2024 - Present</p>
-                </li>
-                <li>
-                    <p><strong>Description</strong>: A tool for downloading files from Athena.</p>
-                </li>
-                <li>
-                    <p><strong>Skills</strong>: Python (Programming Language)</p>
-                </li>
-                <li>
-                    <p><strong>Links</strong>:</p>
-                    <ul>
-                        <li><a href='https://github.com/Zeyu-Xie/Hydrangea-Athena-Scraper'>GitHub -
-                                Zeyu-Xie/Hydrangea-Athena-Scraper</a></li>
-
-                    </ul>
-                </li>
-
-            </ul>
-            <h3 id='hydrangea-screen-monitor'>Hydrangea Screen Monitor</h3>
-            <ul>
-                <li>
-                    <p><strong>Time</strong>: Oct. 2024 - Present</p>
-                </li>
-                <li>
-                    <p><strong>Description</strong>: A homebrew package for safely monitoring remote terminals.</p>
-                </li>
-                <li>
-                    <p><strong>Links</strong>:</p>
-                    <ul>
-                        <li><a href='https://github.com/Zeyu-Xie/Hydrangea-Screen-Monitor'>GitHub -
-                                Zeyu-Xie/Hydrangea-Screen-Monitor</a></li>
-
-                    </ul>
-                </li>
-
-            </ul>
-            <h3 id='volumevibe'>VolumeVibe</h3>
-            <ul>
-                <li>
-                    <p><strong>Time</strong>: Mar. 2024 - Present</p>
-                </li>
-                <li>
-                    <p><strong>Description</strong>: An iOS app for precise volume control, as well as quiet mode with
-                        just one
-                        click. Adjust iPhone and iPad volume precisely.</p>
-                </li>
-                <li>
-                    <p><strong>Skills</strong>: Swift (Programming Language)</p>
-                </li>
-                <li>
-                    <p><strong>Links</strong>:</p>
-                    <ul>
-                        <li><a href='https://apps.apple.com/se/app/volumevibe/id6499272355?l=en-GB'>App Store -
-                                VolumeVibe</a>
-                        </li>
-                        <li><a href='https://github.com/Zeyu-Xie/Hydrangea-VolumeVibe'>GitHub -
-                                Zeyu-Xie/Hydrangea-VolumeVibe</a></li>
-
-                    </ul>
-                </li>
-
-            </ul>
-            <h3 id='backpropagation-in-chaotic-neural-networks'>Backpropagation in Chaotic Neural Networks</h3>
-            <ul>
-                <li><strong>Time</strong>: Feb. 2024 - Jun. 2024</li>
-                <li><strong>Description</strong>: Investigated the application of backpropagation in chaotic neural
-                    networks,
-                    and analyzed stability using Lyapunov exponents.</li>
-                <li><strong>Skills</strong>: Python (Programming Language), Docker, LaTeX, Mathematics</li>
-
-            </ul>
-            <h3
-                id='a-human-computer-collaborative-tool-for-training-a-single-large-language-model-agent-into-a-network-through-few-examples'>
-                A Human-Computer Collaborative Tool for Training a Single Large Language Model Agent into a Network
-                through Few
-                Examples</h3>
-            <ul>
-                <li><strong>Time</strong>: Mar. 2023 - Jan. 2024</li>
-                <li><strong>Description</strong>: The capabilities of a single large language model (LLM) agent for
-                    solving a
-                    complex task are limited. Connecting multiple LLM agents to a network can effectively improve
-                    overall
-                    performance. However, building an LLM agent network (LAN) requires a substantial amount of time and
-                    effort.
-                    In this paper, we introduce EasyLAN, a human-computer collaborative tool that helps developers
-                    construct
-                    LANs. EasyLAN initially generates a LAN containing only one agent based on the description of the
-                    desired
-                    task. Subsequently, EasyLAN leverages a few training examples to update the LAN. For each example,
-                    EasyLAN
-                    models the gap between the output and the ground truth and identifies the causes of the errors.
-                    These errors
-                    are addressed through carefully designed strategies. Users can intervene in EasyLAN&#39;s workflow
-                    or
-                    directly modify the LAN. Eventually, the LAN evolves from a single agent to a network of LLM agents.
-                    The
-                    experimental results indicate that developers can rapidly construct LANs with good performance.</li>
-                <li><strong>Skills</strong>: React.js, Web Development</li>
-
-            </ul>
-            <h3 id='hydrangea-palette'>Hydrangea Palette</h3>
-            <ul>
-                <li>
-                    <p><strong>Time</strong>: Jul. 2023</p>
-                </li>
-                <li>
-                    <p><strong>Description</strong>: A website for displaying various colors for artists.</p>
-                </li>
-                <li>
-                    <p><strong>Skills</strong>: React.js, Web Development</p>
-                </li>
-                <li>
-                    <p><strong>Links</strong>:</p>
-                    <ul>
-                        <li><a href='https://Zeyu-Xie.github.io/Hydrangea-Palette'>Web Page - Hydrangea Palette</a></li>
-                        <li><a href='https://github.com/Zeyu-Xie/Hydrangea-Palette'>GitHub -
-                                Zeyu-Xie/Hydrangea-Palette</a></li>
-
-                    </ul>
-                </li>
-
-            </ul>
+            <div id="projects-masonry">
+                <sl-card class="card-header project-card">
+                    <div slot="header">
+                        <strong>Hydrangea Athena Scraper</strong>
+                        <sl-icon-button name="gear" label="Settings"></sl-icon-button>
+                    </div>
+                    <p style="margin-top: 0;">
+                        A tool for downloading files from Athena.
+                    </p>
+                    <table class="projects-table">
+                        <tr>
+                            <td>
+                                <sl-icon name="calendar"></sl-icon>
+                            </td>
+                            <td>
+                                <sl-format-date month="long" year="numeric"
+                                    date="2024-11-20T00:00:00.000Z"></sl-format-date>
+                                -
+                                Present
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <sl-icon name="code-slash"></sl-icon>
+                            </td>
+                            <td>
+                                <p>Python (Programming Language)</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="display: flex; justify-content: end;">
+                        <sl-button variant="primary" size="small"
+                            href="https://github.com/Zeyu-Xie/Hydrangea-Athena-Scraper">Github</sl-button>
+                    </div>
+                </sl-card>
+                <sl-card class="card-header project-card">
+                    <div slot="header">
+                        <strong>Hydrangea Screen Monitor</strong>
+                        <sl-icon-button name="gear" label="Settings"></sl-icon-button>
+                    </div>
+                    <p style="margin-top: 0;">
+                        A homebrew package for safely monitoring remote terminals.
+                    </p>
+                    <table class="projects-table">
+                        <tr>
+                            <td>
+                                <sl-icon name="calendar"></sl-icon>
+                            </td>
+                            <td>
+                                <sl-format-date month="long" year="numeric"
+                                    date="2024-10-01T00:00:00.000Z"></sl-format-date>
+                                -
+                                Present
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <sl-icon name="code-slash"></sl-icon>
+                            </td>
+                            <td>
+                                <p>Python (Programming Language), Homebrew</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="display: flex; justify-content: end;">
+                        <sl-button variant="primary" size="small"
+                            href="https://github.com/Zeyu-Xie/Hydrangea-Screen-Monitor">Github</sl-button>
+                    </div>
+                </sl-card>
+                <sl-card class="card-header project-card">
+                    <div slot="header">
+                        <strong>VolumeVibe</strong>
+                        <sl-icon-button name="gear" label="Settings"></sl-icon-button>
+                    </div>
+                    <p style="margin-top: 0;">
+                        An iOS app for precise volume control, as well as quiet mode with just one click. Adjust
+                        iPhone and iPad volume precisely.
+                    </p>
+                    <table class="projects-table">
+                        <tr>
+                            <td>
+                                <sl-icon name="calendar"></sl-icon>
+                            </td>
+                            <td>
+                                <sl-format-date month="long" year="numeric"
+                                    date="2024-03-01T00:00:00.000Z"></sl-format-date>
+                                -
+                                Present
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <sl-icon name="tools"></sl-icon>
+                            </td>
+                            <td>
+                                <p>Swift (Programming Language)</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="display: flex; justify-content: end; gap: 0.5rem;">
+                        <sl-button variant="primary" size="small"
+                            href="https://apps.apple.com/se/app/volumevibe/id6499272355?l=en-GB">App Store</sl-button>
+                        <sl-button variant="primary" size="small"
+                            href="https://github.com/Zeyu-Xie/Hydrangea-VolumeVibe">Github</sl-button>
+                    </div>
+                </sl-card>
+                <sl-card class="card-header project-card">
+                    <div slot="header">
+                        <strong>Backpropagation in Chaotic Neural Networks</strong>
+                        <sl-icon-button name="gear" label="Settings"></sl-icon-button>
+                    </div>
+                    <p style="margin-top: 0;">
+                        Investigated the application of backpropagation in chaotic neural networks, and analyzed
+                        stability
+                        using
+                        Lyapunov exponents.
+                    </p>
+                    <table class="projects-table">
+                        <tr>
+                            <td>
+                                <sl-icon name="calendar"></sl-icon>
+                            </td>
+                            <td>
+                                <sl-format-date month="long" year="numeric"
+                                    date="2024-02-01T00:00:00.000Z"></sl-format-date>
+                                -
+                                Jun. 2024
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <sl-icon name="code-slash"></sl-icon>
+                            </td>
+                            <td>
+                                <p>Python (Programming Language), Docker, LaTeX, Mathematics</p>
+                            </td>
+                        </tr>
+                    </table>
+                </sl-card>
+                <sl-card class="card-header project-card">
+                    <div slot="header">
+                        <strong>A Human-Computer Collaborative Tool for Training a Single Large Language Model Agent
+                            into a
+                            Network
+                            through Few Examples</strong>
+                    </div>
+                    <p style="margin-top: 0;">
+                        The capabilities of a single large language model (LLM) agent for solving a complex task are
+                        limited.
+                        Connecting multiple LLM agents to a network can effectively improve overall performance.
+                        However,
+                        building an LLM agent network (LAN) requires a substantial amount of time and effort. In this
+                        paper,
+                        we introduce EasyLAN, a human-computer collaborative tool that helps developers construct LANs.
+                        EasyLAN initially generates a LAN containing only one agent based on the description of the
+                        desired
+                        task. Subsequently, EasyLAN leverages a few training examples to update the LAN. For each
+                        example,
+                        EasyLAN models the gap between the output and the ground truth and identifies the causes of the
+                        errors.
+                        These errors are addressed through carefully designed strategies. Users can intervene in
+                        EasyLAN's
+                        workflow or directly modify the LAN. Eventually, the LAN evolves from a single agent to a
+                        network of
+                        LLM agents. The experimental results indicate that developers can rapidly construct LANs with
+                        good
+                        performance.
+                    </p>
+                    <table class="projects-table">
+                        <tr>
+                            <td>
+                                <sl-icon name="calendar"></sl-icon>
+                            </td>
+                            <td>
+                                <sl-format-date month="long" year="numeric"
+                                    date="2023-03-01T00:00:00.000Z"></sl-format-date>
+                                -
+                                Jan. 2024
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <sl-icon name="code-slash"></sl-icon>
+                            </td>
+                            <td>
+                                <p>React.js, Web Development</p>
+                            </td>
+                        </tr>
+                    </table>
+                </sl-card>
+                <sl-card class="card-header project-card">
+                    <div slot="header">
+                        <strong>Hydrangea Palette</strong>
+                        <sl-icon-button name="gear" label="Settings"></sl-icon-button>
+                    </div>
+                    <p style="margin-top: 0;">
+                        A website for displaying various colors for artists.
+                    </p>
+                    <table class="projects-table">
+                        <tr>
+                            <td>
+                                <sl-icon name="calendar"></sl-icon>
+                            </td>
+                            <td>
+                                <sl-format-date month="long" year="numeric"
+                                    date="2023-07-01T00:00:00.000Z"></sl-format-date>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <sl-icon name="code-slash"></sl-icon>
+                            </td>
+                            <td>
+                                <p>React.js, Web Development</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="display: flex; justify-content: end; gap: 0.5rem;">
+                        <sl-button variant="primary" size="small"
+                            href="https://Zeyu-Xie.github.io/Hydrangea-Palette">Web
+                            Page</sl-button>
+                        <sl-button variant="primary" size="small"
+                            href="https://github.com/Zeyu-Xie/Hydrangea-Palette">Github</sl-button>
+                    </div>
+                </sl-card>
+            </div>
+            <script>
+                $('#projects-masonry').masonry({
+  itemSelector: '.project-card'
+});
+            </script>
         </sl-tab-panel>
         <sl-tab-panel name="skills" id="skills">
             <h2>Skills</h2>
@@ -585,11 +700,16 @@
                         <p>Abstract Algebra, Advanced Linear Algebra, Algorithm Analysis and Design, Complex Analysis,
                             Computational Probability, Electrodynamics, Foundations of Data Science, Fundamentals of
                             Programming,
-                            Introduction of Scientific Computing with Matlab, Introduction to Modern Cryptography, Lab of
-                            Physics, Machine Learning, Mathematical Analysis, Measures and Integrals, Numerical Analysis,
-                            Numerical Methods for Partial Differential Equations, Ordinary Differential Equations, Partial
-                            Differential Equations, Physics for Scientists and Engineers, Probability Theory, Reinforcement
-                            Learning, Statistical Theory and Modeling, Statistics and Data Analysis for Computer and Systems
+                            Introduction of Scientific Computing with Matlab, Introduction to Modern Cryptography, Lab
+                            of
+                            Physics, Machine Learning, Mathematical Analysis, Measures and Integrals, Numerical
+                            Analysis,
+                            Numerical Methods for Partial Differential Equations, Ordinary Differential Equations,
+                            Partial
+                            Differential Equations, Physics for Scientists and Engineers, Probability Theory,
+                            Reinforcement
+                            Learning, Statistical Theory and Modeling, Statistics and Data Analysis for Computer and
+                            Systems
                             Sciences</p>
                     </td>
                 </tr>
@@ -771,9 +891,15 @@
             <table id="courses-table">
                 <thead>
                     <tr>
-                        <th><p>Name</p></th>
-                        <th><p>Code</p></th>
-                        <th><p>Associated with</p></th>
+                        <th>
+                            <p>Name</p>
+                        </th>
+                        <th>
+                            <p>Code</p>
+                        </th>
+                        <th>
+                            <p>Associated with</p>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -964,34 +1090,33 @@
             <h2>Honors &amp; Awards</h2>
             <h3 id='silver-medalist-in-the-35th-chinese-mathematical-olympiad-cmo'>Silver Medalist in the 35th Chinese
                 Mathematical Olympiad (CMO)</h3>
-                <table>
-                    <tr>
-                        <td>
-                            <sl-icon name="award"></sl-icon>
-                        </td>
-                        <td>
-                            <p>Chinese Mathematical Society</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <sl-icon name="calendar"></sl-icon>
-                        </td>
-                        <td>
-                            <sl-format-date month="long" year="numeric"
-                    date="2019-11-20T00:00:00.000Z"></sl-format-date>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <sl-icon name="info-circle"></sl-icon>
-                        </td>
-                        <td>
-                            <p>The Chinese Mathematical Olympiad is an annual invitational mathematical competition for
-                                high school students in China organized by the Chinese Mathematical Society.</p>
-                        </td>
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <td>
+                        <sl-icon name="award"></sl-icon>
+                    </td>
+                    <td>
+                        <p>Chinese Mathematical Society</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <sl-icon name="calendar"></sl-icon>
+                    </td>
+                    <td>
+                        <sl-format-date month="long" year="numeric" date="2019-11-20T00:00:00.000Z"></sl-format-date>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <sl-icon name="info-circle"></sl-icon>
+                    </td>
+                    <td>
+                        <p>The Chinese Mathematical Olympiad is an annual invitational mathematical competition for
+                            high school students in China organized by the Chinese Mathematical Society.</p>
+                    </td>
+                </tr>
+            </table>
             <h3 id='tsinghua-university-math-talents-program-scholarship'>Tsinghua University Math Talents Program
                 Scholarship
             </h3>
@@ -1009,8 +1134,7 @@
                         <sl-icon name="calendar"></sl-icon>
                     </td>
                     <td>
-                        <sl-format-date month="long" year="numeric"
-                    date="2021-03-01T00:00:00.000Z"></sl-format-date>
+                        <sl-format-date month="long" year="numeric" date="2021-03-01T00:00:00.000Z"></sl-format-date>
                     </td>
                 </tr>
                 <tr>

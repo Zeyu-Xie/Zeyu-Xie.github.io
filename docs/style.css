@@ -2,9 +2,14 @@
   font-family: var(--sl-font-sans);
 }
 
+a {
+  text-decoration: none;
+  color: var(--sl-color-primary-600);
+}
+
 body {
   width: 100%;
-  max-width: 992px;
+  max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 1rem;
@@ -31,6 +36,28 @@ table {
 
 #courses-table tr > td:nth-of-type(2) {
   font-family: var(--sl-font-mono);
+}
+
+.projects-table {
+  margin: 0 -1rem;
+}
+
+.card-header {
+  width: 300px;
+}
+
+.card-header [slot=header] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header h3 {
+  margin: 0;
+}
+
+.card-header sl-icon-button {
+  font-size: var(--sl-font-size-medium);
 }
 
 /*# sourceMappingURL=style.css.map */
