@@ -1,3 +1,9 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
 * {
   font-family: var(--sl-font-sans);
 }
@@ -9,7 +15,7 @@ a {
 
 body {
   width: 100%;
-  max-width: 1200px;
+  max-width: $xl;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 1rem;
@@ -38,23 +44,30 @@ table {
   margin: 0 auto;
 }
 
-#courses-table tr > td:nth-of-type(2) {
-  font-family: var(--sl-font-mono);
+#courses-table {
+  tr > td:nth-of-type(2) {
+    font-family: var(--sl-font-mono);
+  }
 }
 
+// Addtional
 .card-header {
   width: 300px;
+  h3 {
+    margin: 0;
+  }
+  sl-icon-button {
+    font-size: var(--sl-font-size-medium);
+  }
+  [slot="header"] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  p {
+    margin-top: 0;
+  }
+  .projects-links {
+    text-align: end;
+  }
 }
-.card-header h3 {
-  margin: 0;
-}
-.card-header sl-icon-button {
-  font-size: var(--sl-font-size-medium);
-}
-.card-header [slot=header] {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/*# sourceMappingURL=style.css.map */
