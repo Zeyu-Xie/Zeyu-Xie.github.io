@@ -151,127 +151,24 @@
                 <sl-icon slot="icon" name="info-circle"></sl-icon>
                 The following information is up-to-date as of
                 <sl-format-date month="long" day="numeric" year="numeric"
-                    date="2025-03-16T00:00:00.000Z"></sl-format-date>
+                    date="{{ contact_info.update_time }}"></sl-format-date>
             </sl-alert>
             <table id="contact-table">
+                {% for item in contact_info.data %}
                 <tr>
                     <td>
-                        <sl-icon name="envelope"></sl-icon>
+                        <sl-icon name="{{ item.sl_icon_name }}"></sl-icon>
                     </td>
                     <td>
-                        <p>xie.zeyu20@gmail.com</p>
+                        <p>{{ item.value }}</p>
                     </td>
                     <td>
                         <div>
-                            <sl-copy-button value="xie.zeyu20@gmail.com"></sl-copy-button>
+                            <sl-copy-button value="{{ item.url }}"></sl-copy-button>
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <sl-icon name="phone"></sl-icon>
-                    </td>
-                    <td>
-                        <p>+46 (0) 70-318 10 56</p>
-                    </td>
-                    <td>
-                        <div>
-                            <sl-copy-button value="+46 (0) 70-318 10 56"></sl-copy-button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <sl-icon name="globe"></sl-icon>
-                    </td>
-                    <td>
-                        <p>zeyu-xie.github.io</p>
-                    </td>
-                    <td>
-                        <div>
-                            <sl-copy-button value="https://zeyu-xie.github.io"></sl-copy-button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <sl-icon name="linkedin"></sl-icon>
-                    </td>
-                    <td>
-                        <p>Zeyu Xie</p>
-                    </td>
-                    <td>
-                        <div>
-                            <sl-copy-button value="https://www.linkedin.com/in/zeyu-xie"></sl-copy-button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <sl-icon name="github"></sl-icon>
-                    </td>
-                    <td>
-                        <p>Zeyu-Xie</p>
-                    </td>
-                    <td>
-                        <div>
-                            <sl-copy-button value="https://github.com/Zeyu-Xie"></sl-copy-button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <sl-icon name="facebook"></sl-icon>
-                    </td>
-                    <td>
-                        <p>Zeyu Xie</p>
-                    </td>
-                    <td>
-                        <div>
-                            <sl-copy-button
-                                value="https://www.facebook.com/profile.php?id=100074450301226"></sl-copy-button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <sl-icon name="instagram"></sl-icon>
-                    </td>
-                    <td>
-                        <p>acanxie</p>
-                    </td>
-                    <td>
-                        <div>
-                            <sl-copy-button value="https://www.instagram.com/acanxie/"></sl-copy-button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <sl-icon name="wechat"></sl-icon>
-                    </td>
-                    <td>
-                        <p>A_Genius_XZY</p>
-                    </td>
-                    <td>
-                        <div>
-                            <sl-copy-button value="A_Genius_XZY"></sl-copy-button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <sl-icon name="pin-map"></sl-icon>
-                    </td>
-                    <td>
-                        <p>Forskarbacken 15, 114 15 Stockholm, Sweden</p>
-                    </td>
-                    <td>
-                        <div>
-                            <sl-copy-button value="https://maps.app.goo.gl/Y9rKbTeWLCVW9uPa6"></sl-copy-button>
-                        </div>
-                    </td>
-                </tr>
+                {% endfor %}
             </table>
         </sl-tab-panel>
         <sl-tab-panel name="about-me" id="about-me">
@@ -1122,15 +1019,15 @@
         </sl-tab-panel>
         <sl-tab-panel name="honors-awards" id="honors-awards">
             <h2>Honors &amp; Awards</h2>
-            <h3 id='silver-medalist-in-the-35th-chinese-mathematical-olympiad-cmo'>Silver Medalist in the 35th Chinese
-                Mathematical Olympiad (CMO)</h3>
+            {% for item in honors_awards.data %}
+            <h3>{{ item.name }}</h3>
             <table>
                 <tr>
                     <td>
                         <sl-icon name="award"></sl-icon>
                     </td>
                     <td>
-                        <p>Chinese Mathematical Society</p>
+                        <p>{{ item.org }}</p>
                     </td>
                 </tr>
                 <tr>
@@ -1138,7 +1035,7 @@
                         <sl-icon name="calendar"></sl-icon>
                     </td>
                     <td>
-                        <sl-format-date month="long" year="numeric" date="2019-11-20T00:00:00.000Z"></sl-format-date>
+                        <sl-format-date month="long" year="numeric" date="{{ item.time }}"></sl-format-date>
                     </td>
                 </tr>
                 <tr>
@@ -1146,42 +1043,11 @@
                         <sl-icon name="info-circle"></sl-icon>
                     </td>
                     <td>
-                        <p>The Chinese Mathematical Olympiad is an annual invitational mathematical competition for
-                            high school students in China organized by the Chinese Mathematical Society.</p>
+                        <p>{{ item.description }}</p>
                     </td>
                 </tr>
             </table>
-            <h3 id='tsinghua-university-math-talents-program-scholarship'>Tsinghua University Math Talents Program
-                Scholarship
-            </h3>
-            <table>
-                <tr>
-                    <td>
-                        <sl-icon name="award"></sl-icon>
-                    </td>
-                    <td>
-                        <p>Tsinghua University</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <sl-icon name="calendar"></sl-icon>
-                    </td>
-                    <td>
-                        <sl-format-date month="long" year="numeric" date="2021-03-01T00:00:00.000Z"></sl-format-date>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <sl-icon name="info-circle"></sl-icon>
-                    </td>
-                    <td>
-                        <p>The Math Talents Program Scholarship is awarded to students with outstanding performance in
-                            mathematics.</p>
-                    </td>
-                </tr>
-            </table>
-
+            {% endfor %}
         </sl-tab-panel>
     </sl-tab-group>
 
